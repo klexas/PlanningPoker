@@ -1,0 +1,2 @@
+# PlanningPoker
+Planning poker implementation 
