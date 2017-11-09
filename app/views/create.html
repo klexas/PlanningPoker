@@ -1,0 +1,66 @@
+﻿<section>
+    <h2 data-bind="text: displayName"></h2>
+</section>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <h2>Topics</h2>
+            <div class="input-group">
+                <input type="text" data-bind="value: tfsLink" class="form-control" aria-label="..." placeholder="TFS Link">
+                <div class="input-group-btn">
+                    <button class="btn btn-group-sm btn-primary" data-bind="click:addTFSLink">Add</button>
+                </div>
+            </div>
+            <hr/>
+            <ul class="list-group" data-bind="foreach: {data:tfsLinks, as : 'externLink'}">
+                <li data-bind="text: externLink.link" class="list-group-item topics_list"></li>
+            </ul>
+
+        </div>
+        <div class="col-xs-6">
+            <h2>Room Details</h2>
+            <form>
+                <div class="form-group">
+                    <label for="">Room Name</label>
+                    <input type="text" data-bind="value:roomName" class="form-control" placeholder="">
+                    <p class="help-block">For a pretty & unique URL!</p>
+
+                </div>
+                <div class="form-group">
+                    <label for="">Team Name</label>
+                    <input type="email" class="form-control" id="" placeholder="">
+                    <p class="help-block">Identify the team!</p>
+
+                </div>
+                <div class="form-group">
+                    <label for="">Date</label>
+                    <input type="date" class="form-control" placeholder="">
+                    <p class="help-block">When is this due to be played ?</p>
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Location ?</label>
+                    <input type="text" class="form-control"  id="exampleInputFile">
+                    <p class="help-block">Where is maybe important!</p>
+                </div>
+                <button type="submit" class="btn btn-default" data-bind="click:createRoom">Create</button>
+            </form>
+        </div>
+    </h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

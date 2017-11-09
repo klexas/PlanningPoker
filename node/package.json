@@ -1,0 +1,19 @@
+{
+  "name": "planningpoker",
+  "version": "1.0.0",
+  "description": "qp",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: Tests todo\" && exit 1"
+  },
+  "keywords": [
+    "planning",
+    "poker"
+  ],
+  "author": "iam@adamrobins.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "socket.io": "^2.0.3"
+  }
+}
