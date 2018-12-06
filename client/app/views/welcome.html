@@ -1,0 +1,28 @@
+﻿<section>
+    <h2 data-bind="text:displayName"></h2>
+    <blockquote data-bind="text:description"></blockquote>
+    <h3>Features</h3>
+    <ul data-bind="foreach: features">
+        <li data-bind="text:$data"></li>
+    </ul>
+
+
+</section>
+
+<section>
+    <div class="container">
+        <div class="row text-center">
+            <a href="#Create"><div class="col-xs-6"><div class="well well-fenergo">
+                <h1 class="fa fa-user"></h1>
+                <br/>
+                <span>Create Room</span>
+            </div></div></a>
+            <a href="#Open"><div class="col-xs-6"><div class="well well-fenergo">
+                <h1 class="fa fa-users"></h1>
+                <br/>
+                <span>Join Room</span>
+            </div></div></a>
+        </div>
+    </div>
+
+</section>

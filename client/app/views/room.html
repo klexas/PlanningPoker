@@ -1,0 +1,78 @@
+﻿<div class="col-xs-9">
+    <div class="row">
+        <h2 data-bind="text:displayName"></h2>
+        <a target="_blank" data-bind="attr: { href: url, title: description }">TFS Link</a>
+        <blockquote data-bind="text:description"></blockquote>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <div class="well"><h2>Results</h2></div>
+            <div class="panel panel-default">
+                <div class="panel-body result_score">
+                    <h1><i class="fa fa-trophy"></i> 3</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <div class="well"><h2>Votes</h2></div>
+            <div class="" data-bind="foreach: {data: voteResults, as: 'vote'}">
+                <div class="col-xs-3 panel panel-default text-center">
+                    <h1 data-bind="text: vote.result"></h1>
+                    <span data-bind="text: vote.userName"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="right_nav col-xs-3">
+    <div class="panel-heading text-center">
+        <h2>People : <span data-bind="text: people().length"></span></h2>
+        <hr/>
+        <ul class="list-group" data-bind="foreach: people">
+            <li class="list-group-item" data-bind="text: $data"></li>
+        </ul>
+        <i class="fa fa-user"></i> <span data-bind="text:visitorName"></span>
+        <br/><button class="btn btn-info" >View All</button>
+        <hr/>
+
+    </div>
+    <div class="panel-heading text-center">
+        <h2>Stories</h2>
+        <hr/>
+        <i class="fa fa-user"></i> <span data-bind="text:visitorName"></span>
+        <br/><button class="btn btn-info" >View All</button>
+        <hr/>
+
+    </div>
+    <ul data-bind="foreach: {data:userStories, as : 'story'}" class="story_list">
+        <li data-bind="text:story.title, click: $parent.selectStory" class="story_list"></li>
+    </ul>
+</div>
+
+<div class="fibonacci_room_bottom">
+    <div class="row" data-bind="foreach: {data: fibonacci, as: 'card'}">
+        <div class="col-xs-3 col-md-1 card" data-bind="click: $parent.select"><h1 data-bind="text: card"></h1></div>
+    </div>
+</div>
+
+<!--UserName Modal-->
+<div class="modal fade" tabindex="-1" role="dialog" id="username">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Please enter your name</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" class="form-control" data-bind="value: visitorName" aria-label="...">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" data-bind="click: setName" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
