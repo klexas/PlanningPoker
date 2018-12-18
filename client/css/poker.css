@@ -1,20 +1,88 @@
 ﻿body{
     font-family: 'Roboto', sans-serif;
+    color: rgb(213, 210, 205);
+    background-color: rgb(23, 24, 28);
 }
 
 h1, h2, h3, h4 {
-    color: #c30e2e;
+    color: #33C4FF;
 }
-
 .navbar-default {
-    background-color: #000B1B;
-    border-color: #000B1B;
+    background-color: rgb(25, 26, 30);
+    border-top-color: rgb(56, 56, 56);
+    border-right-color: rgb(56, 56, 56);
+    border-bottom-color: rgb(56, 56, 56);
+    border-left-color: rgb(56, 56, 56);
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: rgb(200, 197, 191);
+    background-color: rgb(29, 31, 36);
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-top-color: rgb(56, 56, 56);
+    border-right-color: rgb(56, 56, 56);
+    border-bottom-color: rgb(56, 56, 56);
+    border-left-color: rgb(56, 56, 56);
+}
+.form-control {
+    color: rgb(200, 197, 191);
+    background-color: rgb(23, 24, 28);
+    background-image: none;
+    border-top-color: rgb(61, 61, 61);
+    border-right-color: rgb(61, 61, 61);
+    border-bottom-color: rgb(61, 61, 61);
+    border-left-color: rgb(61, 61, 61);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px inset;
+}
+.btn-default{
+    color: rgb(213, 210, 205);
+    background-color: rgb(23, 24, 28);
+    border-top-color: rgb(61, 61, 61);
+    border-right-color: rgb(61, 61, 61);
+    border-bottom-color: rgb(61, 61, 61);
+    border-left-color: rgb(61, 61, 61);
+}
+.modal-content {
+    background-color: rgb(23, 24, 28);
+    border-top-color: rgba(102, 102, 102, 0.2);
+    border-right-color: rgba(102, 102, 102, 0.2);
+    border-bottom-color: rgba(102, 102, 102, 0.2);
+    border-left-color: rgba(102, 102, 102, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 9px;
+    outline-color: initial;
+}
+.panel-default {
+    border-top-color: rgb(58, 58, 58);
+    border-right-color: rgb(58, 58, 58);
+    border-bottom-color: rgb(58, 58, 58);
+    border-left-color: rgb(58, 58, 58);
+}
+.panel {
+    background-color: rgb(23, 24, 28);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px;
+}
+.panel-default {
+    border-top-color: rgb(58, 58, 58);
+    border-right-color: rgb(58, 58, 58);
+    border-bottom-color: rgb(58, 58, 58);
+    border-left-color: rgb(58, 58, 58);
 }
 
-.navbar-default .navbar-brand {
-    color: #c30e2e;
+.panel-default > .panel-heading {
+    color: rgb(213, 210, 205);
+    background-color: rgb(26, 27, 31);
+    border-top-color: rgb(58, 58, 58);
+    border-right-color: rgb(58, 58, 58);
+    border-bottom-color: rgb(58, 58, 58);
+    border-left-color: rgb(58, 58, 58);
 }
-
+.panel-title {
+    color: inherit;
+}
 .navbar-default .navbar-nav>li>a {
     color: #d6d6d6;
 }
