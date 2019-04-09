@@ -7,7 +7,7 @@
         'knockout': '../lib/knockout/knockout-3.4.0',
         'bootstrap': '../lib/bootstrap/js/bootstrap',
         'jquery': '../lib/jquery/jquery-1.9.1',
-        'websocket': 'http://localhost:3001/socket.io/socket.io.js'
+        'websocket': 'http://localhost:3005/socket.io/socket.io.js'
     },
     shim: {
         'bootstrap': {
